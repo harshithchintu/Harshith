@@ -1,0 +1,13 @@
+# Create a Python function named "get_integers" that accepts a list of mixed non-negative integers and strings.
+# The function should filter and return only the integers in the same order as they appear in the original list.
+
+def get_integers(integers):
+    integers_list = [items for items in integers if isinstance(items, int)]
+    print(integers_list)
+    
+integers = [] #['2', 'a', 'x', '10', '9', '5', '99', 'e']
+list_input = int(input('Enter the number of elements in the list: '))
+for n in range(list_input):
+    values = input('Enter values to the list: ')
+    integers.append(values)
+get_integers(integers)

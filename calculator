@@ -1,0 +1,30 @@
+# Create a Python function that accepts three parameters. The first parameter should be an integer,
+# the second parameter should be a mathematical operator:+, -, /, or, and the third parameter should also be an integer. 
+
+# The function should be able to undergo the calculation and return the results. 
+
+def calculation(integer1, operator, integer2):
+    if operator == '+':
+        add = integer1 + integer2
+        print(f'You\'re sum is: {add}')
+    elif operator == '-':
+        diff = integer1 - integer2
+        print(f'You\'re difference is: {diff}')
+    elif operator == '/':
+        if integer2 != 0:
+            quo = integer1 / integer2
+            print(f'Your quotient is: {quo}')
+        else:
+            print("Division by zero is not allowed.")
+        print(f'You\'re quotient is: {quo}')
+    elif operator.lower() == 'or':
+        or_op = bool(integer1) or bool(integer2)
+        print(f'You\'re OR value is: {or_op}')
+    else:
+        and_op = bool(integer1) and bool(integer2)
+        print(f'You\'re AND value is: {and_op}')
+        
+integer1 = int(input("Enter the first value: "))
+operator = input('Enter the operator: ')
+integer2 = int(input("Enter the second value: "))
+calculation(integer1, operator, integer2)

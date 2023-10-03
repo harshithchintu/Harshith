@@ -1,0 +1,7 @@
+def rad_degree(val):
+    value = val*(180/(22/7))
+    print(f'the value is: {value}')
+    
+val = float(input())
+print('Enter the value in Radians: ')
+rad_degree(val)

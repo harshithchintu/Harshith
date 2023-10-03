@@ -1,0 +1,18 @@
+# count vowels
+# take a word as param and return number of vowels
+
+# To achieve this, you can use a for loop to iterate through each character in the word.
+# Then, you can check if the character is a vowel using a conditional statement.
+# If the character is a vowel, you increment a counter variable. Finally, you return the counter variable as the result.
+
+def vowels(word):
+    vowel = 'aeiouAEIOU'
+    counter = 0
+    for n in word:
+        if n in vowel:
+            counter += 1
+    print(f'Number of vowels in your word is: {counter}')
+    print('Your word is: ',word)
+        
+word = input('enter a word: ')
+vowels(word)

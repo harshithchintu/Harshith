@@ -1,0 +1,23 @@
+Write a Python function that takes two parameters: a list of numbers and a second parameter that can have one of three values: "asc", "desc", or "none".
+If the second parameter is "asc", the function should return the list of numbers in ascending order. If it is "desc", the function should return the list
+of numbers in descending order. else, the function should return the unaltered list.
+
+
+
+def sort(num, order):
+    if order == 'asc':
+        a = sorted(num)
+        print('sorted list is',a)
+    elif order == 'desc':
+        b = sorted(num, reverse = True)
+        print('reverse sorted list is', b)
+    else:
+        print('printing list',num)
+        
+num_list = []
+i = int(input('Enter number of elements: '))
+for n in range(i):
+    j = int(input('enter the elements: '))
+    num_list.append(j)
+order = input('Enter either asc or desc: ')
+sort(num_list, order)
